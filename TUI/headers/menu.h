@@ -22,6 +22,7 @@ typedef struct MenuItem
     // REPLACE MAGIC NUMBERS
 } MenuItem;
 
+void menu_loop(void);
 void exec_menu(MENU menu_id);
 
 /*                  AVOIDING NAMING CONFLICTS
@@ -46,7 +47,7 @@ static void (*menu_funcs[MENU_END])(void) = {
     &_menu_checkdeps,
 
 };
-// Pad array
+// Pad the array with NULL, if no function exists for the menu.
 
 
 static MenuItem menus[MENU_END] = {
@@ -55,5 +56,7 @@ static MenuItem menus[MENU_END] = {
     {menu_checkdeps, 'd', 0, {0}, "", "", ""},
     
 };
+
+static int running = 1;
 
 #endif
