@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "menu.h": "c",
+        "stdincludes.h": "c"
+    }
+}

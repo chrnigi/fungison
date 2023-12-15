@@ -1,0 +1,2 @@
+contig_id	feature_id	type	location	start	stop	strand	function	locus_tag	figfam	species	nucleotide_sequence	amino_acid	sequence_accession
+													
